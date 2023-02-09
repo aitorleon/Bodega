@@ -5,7 +5,13 @@ import java.util.Scanner;
 
 public class artikuloZerrenda {
 	Scanner teklatua = new Scanner (System.in);
-	ArrayList <artikuloa> lista = new ArrayList();
+	ArrayList <artikuloa> lista;
+	
+	public artikuloZerrenda () {
+		this.lista = new ArrayList<artikuloa>();
+	}
+	
+	
 	
 	public void fillData () {
 		artikuloa f1 = new freskagarriak("9845","CocaCola","CocaCola",0.70,300,"Cola",false,true,27);
@@ -73,5 +79,17 @@ public class artikuloZerrenda {
 			}
 		}
 		return prezioa;
+	}
+	public Scanner getTeklatua() {
+		return teklatua;
+	}
+	public void setTeklatua(Scanner teklatua) {
+		this.teklatua = teklatua;
+	}
+	public ArrayList<artikuloa> getLista() {
+		return lista;
+	}
+	public void setLista(ArrayList<artikuloa> lista) {
+		this.lista = lista;
 	}
 }

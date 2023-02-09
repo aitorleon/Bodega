@@ -6,31 +6,50 @@ public class faktura implements fakturazioa {
 	private int zenbakia;
 	private String izena;
 	private String abizena;
-	ArrayList <fakturaLerroak> fak = new ArrayList();
+	private ArrayList<fakturaLerroak> fak;
 	private double totala;
 	
 	public faktura () {
 		this.zenbakia=0;
 		this.izena="";
 		this.abizena="";
+		this.fak = new ArrayList<fakturaLerroak>();
 		this.totala=0;
 	}
 	public faktura (int z, String i, String a, double t) {
 		this.zenbakia=z;
 		this.izena=i;
 		this.abizena=a;
+		this.fak= new ArrayList <fakturaLerroak>();
 		this.totala=t;
 	}
 	
 	public void lerroaGehitu (String pkodea,int pkopurua,double pguztira) {
-		
+		fakturaLerroak f1 = new fakturaLerroak(pkodea, pkopurua,pguztira);
+		fak.add(f1);
+	} 
+	
+	public void print () {
+		System.out.println(this.zenbakia);
+		System.out.println(this.izena);
+		System.out.println(this.abizena);
+		for (fakturaLerroak y : fak) {
+			System.out.println(fak);
+		}
+		System.out.println(kalkulatuTotala());
 	}
 
 	@Override
 	public double kalkulatuTotala() {
 		// TODO Auto-generated method stub
-		return 0;
+		double prezioFinal=0;
+		for (fakturaLerroak w : fak) {
+			prezioFinal = prezioFinal + w.getGuztiraLerro();
+		}
+		prezioFinal = prezioFinal * BEZ;
+		return prezioFinal;
 	}
+	
 	public int getZenbakia() {
 		return zenbakia;
 	}
