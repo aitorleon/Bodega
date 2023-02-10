@@ -6,7 +6,7 @@ public class bodegaMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		artikuloZerrenda a1 = new artikuloZerrenda();
-		ArrayList <artikuloZerrenda> produktuak = new ArrayList <artikuloZerrenda>();
+		artikuloZerrenda a2;
 		Scanner teklatua = new Scanner(System.in);
 		int aukera;
 		a1.fillData();
@@ -26,16 +26,50 @@ public class bodegaMain {
 		aukera = teklatua.nextInt();
 		switch (aukera) {
 		case 1:
+			faktura f1 = new faktura();
+			String end="";
+			do {
+				
+			}while(!end.equalsIgnoreCase("end"));
 			break;
 		case 2:
-			for (artikuloZerrenda i : produktuak) {
-				System.out.println(i);
+			for (int i=0;i<a1.getLista().size();i++) {
+					a1.getLista().get(i).printEzaugarriak();
 			}
 			break;
 		case 3:
-			for (artikuloZerrenda w : produktuak) {
-				
+			for (int i=0;i<a1.getLista().size();i++) {
+				if (a1.getLista().get(i).osasungarria()) {
+					a1.getLista().get(i).printEzaugarriak();
+				}
 			}
+			break;
+		case 4:
+			ArrayList <artikuloa> a = new ArrayList <artikuloa>();
+			String kod;
+			System.out.println("Sar ezazu kodea:");
+			kod = teklatua.next();
+			a=a1.ekibalentea(kod);
+			for (int i=0;i<a.size();i++) {
+				a.get(i).toString();
+			}
+			break;
+		case 5:
+			ArrayList <artikuloa> b = new ArrayList <artikuloa>();
+			b=a1.garestiena();
+			for (int i=0;i<b.size();i++) {
+				b.get(i).printEzaugarriak();
+			}
+			break;
+		case 6:
+			ArrayList <artikuloa> c = new ArrayList <artikuloa>();
+			c=a1.reponer();
+			for (int i=0;i<c.size();i++) {
+				c.get(i).printEzaugarriak();
+			}
+			break;
+		case 7:
+			
 		}
 	}
 

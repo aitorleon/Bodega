@@ -33,4 +33,9 @@ public class fakturaLerroak {
 	public void setGuztiraLerro(double guztiraLerro) {
 		this.guztiraLerro = guztiraLerro;
 	}
+	@Override
+	public String toString() {
+		return "fakturaLerroak [kodea=" + kodea + ", kopurua=" + kopurua + ", guztiraLerro=" + guztiraLerro + "]";
+	}
+	
 }

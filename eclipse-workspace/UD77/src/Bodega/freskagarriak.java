@@ -33,6 +33,7 @@ public class freskagarriak extends artikuloa {
 		System.out.println(this.zukua);
 		System.out.println(this.gasa);
 		System.out.println(this.azukrea);
+		System.out.println("----------------");
 	}
 	@Override
 	public boolean osasungarria() {
@@ -43,5 +44,34 @@ public class freskagarriak extends artikuloa {
 		else {
 			return false;
 		}
+	}
+	public String getZaporea() {
+		return zaporea;
+	}
+	public void setZaporea(String zaporea) {
+		this.zaporea = zaporea;
+	}
+	public boolean isZukua() {
+		return zukua;
+	}
+	public void setZukua(boolean zukua) {
+		this.zukua = zukua;
+	}
+	public boolean isGasa() {
+		return gasa;
+	}
+	public void setGasa(boolean gasa) {
+		this.gasa = gasa;
+	}
+	public int getAzukrea() {
+		return azukrea;
+	}
+	public void setAzukrea(int azukrea) {
+		this.azukrea = azukrea;
+	}
+	@Override
+	public String toString() {
+		return "freskagarriak [zaporea=" + zaporea + ", zukua=" + zukua + ", gasa=" + gasa + ", azukrea=" + azukrea
+				+ "]";
 	}
 }

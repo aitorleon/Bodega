@@ -17,8 +17,8 @@ public class artikuloZerrenda {
 		artikuloa f1 = new freskagarriak("9845","CocaCola","CocaCola",0.70,300,"Cola",false,true,27);
 		artikuloa f2 = new freskagarriak("8138","Kas Naranja","PepsiCola",0.50,178,"Naranja",true, true, 27);
 		artikuloa f3 = new freskagarriak("6521","Nestea","Nestle",0.80,32,"Limoi Tea", true, false, 48);
-		artikuloa f4 = new freskagarriak("9873","Fanta","CocaCola",0.78,59,"Limoia",true,false,28);
-		artikuloa f5 = new freskagarriak("1894","Sprite","CocaCola",0.90,214,"Lima",true, true,27);
+		artikuloa f4 = new freskagarriak("9873","Fanta","CocaCola",0.80,59,"Limoia",true,false,28);
+		artikuloa f5 = new freskagarriak("1894","Sprite","CocaCola",0.80,214,"Lima",true, true,27);
 		/////////////////////////////////////////////////////////////////////////////////////////////////////
 		artikuloa a1 = new ardoa("1825","Setien","Catena",1.89,256,"Tintoa","Argentina",2014,"Garnacha");
 		artikuloa a2 = new ardoa("4835","Otoñal","Torres",7.69,125,"Tintoa","Errioxa",2000,"BOBAL");

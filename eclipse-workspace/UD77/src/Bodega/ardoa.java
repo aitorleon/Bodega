@@ -32,6 +32,7 @@ public class ardoa extends artikuloa {
 		System.out.println(this.jatorria);
 		System.out.println(this.urtea);
 		System.out.println(this.mahatsa);
+		System.out.println("----------------");
 	}
 	@Override
 	public boolean osasungarria() {
