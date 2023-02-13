@@ -22,8 +22,8 @@ public class artikuloZerrenda {
 		/////////////////////////////////////////////////////////////////////////////////////////////////////
 		artikuloa a1 = new ardoa("1825","Setien","Catena",1.89,256,"Tintoa","Argentina",2014,"Garnacha");
 		artikuloa a2 = new ardoa("4835","Otoñal","Torres",7.69,125,"Tintoa","Errioxa",2000,"BOBAL");
-		artikuloa a3 = new ardoa("4688","Cumbrero","19 Crimes",5.65,300,"Tintoa","Australia",2010,"ALEKSANDROULI");
-		artikuloa a4 = new ardoa("4845","Txakoli","Bodega Mendraka",8.99,72,"Txuria","Euskal Herria",2022,"Albariño");
+		artikuloa a3 = new ardoa("4875","Cumbrero","19 Crimes",5.65,300,"Tintoa","Australia",2010,"ALEKSANDROULI");
+		artikuloa a4 = new ardoa("4835","Txakoli","Bodega Mendraka",8.99,72,"Txuria","Euskal Herria",2022,"Albariño");
 		artikuloa a5 = new ardoa("4875","Viura","Rueda",4.55,48,"Txuria","Errioxa",1999,"Verdejo");
 		/////////////////////////////////////////////////////////////////////////////////////////////////////
 		lista.add(f1);

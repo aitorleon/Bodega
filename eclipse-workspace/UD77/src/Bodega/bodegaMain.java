@@ -51,7 +51,7 @@ public class bodegaMain {
 			kod = teklatua.next();
 			a=a1.ekibalentea(kod);
 			for (int i=0;i<a.size();i++) {
-				a.get(i).toString();
+				a.get(i).printEzaugarriak();
 			}
 			break;
 		case 5:
@@ -69,7 +69,24 @@ public class bodegaMain {
 			}
 			break;
 		case 7:
-			
+			int i=0,stock;
+			boolean aurkituta = false;
+			String kodea;
+			System.out.println("Sartu kode bat");
+			kodea = teklatua.next();
+			System.out.println("Zenbat stock gehitu nahi duzu?");
+			stock = teklatua.nextInt();
+			while (!aurkituta && i<a1.getLista().size()) {
+				if (a1.getLista().get(i).getKodea().equalsIgnoreCase(kodea)) {
+					a1.getLista().get(i).GehituStock(stock);
+					aurkituta = true;
+				}else {
+					i++;
+				}
+			}
+			for (int j=0;j<a1.getLista().size();j++) {
+				a1.getLista().get(j).printEzaugarriak();
+			}
 		}
 	}
 
