@@ -30,13 +30,13 @@ public class faktura implements fakturazioa {
 	} 
 	
 	public void print () {
-		System.out.println(this.zenbakia);
-		System.out.println(this.izena);
-		System.out.println(this.abizena);
+		System.out.println("Faktura zenbakia" + this.zenbakia);
+		System.out.println("Bezeroaren izena" + this.izena);
+		System.out.println("Bezeroaren abizena" + this.abizena);
 		for (fakturaLerroak y : fak) {
-			System.out.println(fak);
+			System.out.println(y);
 		}
-		System.out.println(kalkulatuTotala());
+		System.out.println("Totala" + kalkulatuTotala());
 	}
 
 	@Override
